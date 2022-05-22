@@ -1,0 +1,11 @@
+local raven = game:HttpGet("https://raw.githubusercontent.com/azraelle1218/azraellehub/main/bobokaba")
+while task.wait(1.0) do
+    print"烏鴉製造"
+    local args = {
+    [1] = "I LOVE RAVEN",
+    [2] = "All"
+}
+ 
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+workspace.__THINGS.__REMOTES.MAIN:FireServer("b", raven)
+end
